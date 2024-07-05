@@ -16,10 +16,10 @@ function App() {
         </header>
         <main>
           <Routes>
-          <Route path="/" element={<HomePage />} />
-            <Route path="/practice" element={<PracticePage />} />
-            <Route path="/course/:courseNumber/semester/:semesterNumber" element={<SemesterPage />} />
-            <Route path="/course/:courseNumber" element={<CoursePage />} />
+          <Route path="/ics2.github.io/" element={<HomePage />} />
+            <Route path="/ics2.github.io/practice" element={<PracticePage />} />
+            <Route path="/ics2.github.io/course/:courseNumber/semester/:semesterNumber" element={<SemesterPage />} />
+            <Route path="/ics2.github.io/course/:courseNumber" element={<CoursePage />} />
           </Routes>
         </main>
         <footer>
