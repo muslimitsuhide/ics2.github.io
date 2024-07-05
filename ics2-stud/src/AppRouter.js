@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import CoursePage from './components/CoursePage';
 import SemesterPage from './components/SemesterPage';
+import HomePage from './components/HomePage';
+import PracticePage from './components/PracticePage';
 import './App.css';
 
 function App() {
@@ -14,6 +16,8 @@ function App() {
         </header>
         <main>
           <Routes>
+          <Route path="/" element={<HomePage />} />
+            <Route path="/practice" element={<PracticePage />} />
             <Route path="/course/:courseNumber/semester/:semesterNumber" element={<SemesterPage />} />
             <Route path="/course/:courseNumber" element={<CoursePage />} />
           </Routes>
