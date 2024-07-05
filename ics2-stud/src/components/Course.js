@@ -1,11 +1,11 @@
 import React from 'react';
 import Semester from './Semester';
 
-function Course() {
+function Course({ courseNumber }) {
   return (
     <div className="course">
-      <h2>Course</h2>
-      <Semester />
+      <Semester startSemester={2 * (courseNumber - 1) + 1} />
+      <Semester startSemester={2 * (courseNumber - 1) + 2} />
     </div>
   );
 }

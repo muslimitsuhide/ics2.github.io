@@ -1,13 +1,12 @@
 import React from 'react';
 import Subject from './Subject';
 
-function Semester() {
-  return (
-    <div className="semester">
-      <h3>Semester</h3>
-      <Subject />
-    </div>
-  );
+function Semester({ semesterNumber }) {
+    return (
+        <div className="semester">
+        <h4>Семестр {semesterNumber}</h4>
+        </div>
+    );
 }
 
 export default Semester;

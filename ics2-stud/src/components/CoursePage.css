@@ -1,0 +1,58 @@
+.course-info {
+    background-color: #e0f7fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    color: #333;
+}
+
+.course-info h3 {
+    color: #00796b;
+}
+
+.course-semester-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.course-semester-list ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+.course-semester-list li {
+    cursor: pointer;
+    margin: 0 10px;
+    padding: 10px 30px;
+    position: relative;
+    border-radius: 5px;
+    background-color: #ced4da;
+    border: 1px solid #ced4da;
+    color: #495057;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.course-semester-list li:hover {
+    background-color: #e9ecef;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.course-semester-list h3 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #495057;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.course-semester-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
