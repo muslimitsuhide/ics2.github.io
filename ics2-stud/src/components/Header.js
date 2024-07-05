@@ -6,7 +6,7 @@ function Header() {
   const navigate = useNavigate();
 
   const handleCourseClick = (courseNumber) => {
-    navigate(`/course/${courseNumber}`);
+    navigate(`/ics2.github.io/course/${courseNumber}`);
   };
 
   const handleNavClick = (path) => {
@@ -18,7 +18,7 @@ function Header() {
       <h2>Student Information Platform</h2>
       <nav className="nav">
         <ul className="nav-buttons">
-          <li onClick={() => handleNavClick('/')}>Главная</li>
+          <li onClick={() => handleNavClick('/ics2.github.io/')}>Главная</li>
         </ul>
         <ul className="courses">
           {[1, 2, 3, 4, 5, 6].map((courseNumber) => (
@@ -31,7 +31,7 @@ function Header() {
           ))}
         </ul>
         <ul className="nav-buttons">
-          <li onClick={() => handleNavClick('/practice')}>Практика</li>
+          <li onClick={() => handleNavClick('/ics2.github.io/practice')}>Практика</li>
         </ul>
       </nav>
     </header>
