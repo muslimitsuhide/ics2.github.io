@@ -19,38 +19,29 @@
     display: flex;
 }
 
-.nav-buttons li {
-    cursor: pointer;
-    margin: 0 10px;
-    padding: 10px 20px;
-    position: relative;
-    border-radius: 5px;
-    background-color: #3498db;
-    color: #fff;
-    transition: background-color 0.3s ease;
-}
-
-.nav-buttons li:hover {
-    background-color: #2980b9;
-}
-
+.nav-buttons li,
 .courses li {
     cursor: pointer;
     margin: 0 10px;
     padding: 10px 20px;
     position: relative;
     border-radius: 5px;
-    background-color: #1c7ae5;
     color: #fff;
-    transition: background-color 0.3s ease;
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.nav-buttons li:hover,
 .courses li:hover {
-    background-color: #3498db;
+    background: linear-gradient(135deg, #2980b9, #3498db);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .courses li.active {
-    background-color: #2980b9;
+    background: linear-gradient(135deg, #2980b9, #3498db);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .semester-list {
@@ -64,6 +55,7 @@
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     background-color: #ecf0f1;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .semester-list h3 {

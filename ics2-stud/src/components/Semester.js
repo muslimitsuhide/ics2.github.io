@@ -1,5 +1,4 @@
 import React from 'react';
-import Subject from './Subject';
 
 function Semester({ semesterNumber }) {
     return (

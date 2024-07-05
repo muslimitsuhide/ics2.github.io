@@ -1,0 +1,138 @@
+.semester-list {
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  padding: 10px;
+  width: 220px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.semester-list h3 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #495057;
+  text-align: center; 
+  margin-bottom: 10px;
+}
+
+.semester-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.semester-list li {
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #ced4da;
+  color: #495057;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+.semester-list li:hover {
+  background-color: #e9ecef;
+}
+
+.semester-discipline-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.semester-discipline-list ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Выравнивание элементов по центру */
+}
+
+.semester-discipline-list li {
+  cursor: pointer;
+  margin: 0 10px 10px 0;
+  padding: 12px 24px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #fd6f82, #ff8e6e);
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
+}
+
+.semester-discipline-list li:hover {
+  background: linear-gradient(135deg, #ff8e6e, #fd6f82);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.semester-discipline-list h3 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #495057;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.semester-discipline-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.discipline {
+  margin-bottom: 10px;
+}
+
+.discipline-button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  padding: 14px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.discipline-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: width 0.3s ease;
+  z-index: -1;
+}
+
+.discipline-button:hover::before {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .semester-discipline-list li {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .semester-discipline-list li {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
