@@ -35,7 +35,7 @@ function CoursePage() {
   const [semester1, semester2] = calculateSemesterNumbers(courseNumber);
 
   const handleSemesterClick = (semesterNumber) => {
-    navigate(`/ics2.github.io/course/${courseNumber}/semester/${semesterNumber}`);
+    navigate(`/course/${courseNumber}/semester/${semesterNumber}`);
   };
 
   return (

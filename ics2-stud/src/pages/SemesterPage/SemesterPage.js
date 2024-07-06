@@ -53,7 +53,7 @@ function SemesterPage() {
   }, [courseNumber, semesterNumber]);
 
   const handleDisciplineClick = (discipline) => {
-    navigate(`/ics2.github.io/course/${courseNumber}/semester/${semesterNumber}/${discipline}`);
+    navigate(`/course/${courseNumber}/semester/${semesterNumber}/${discipline}`);
   };
 
   return (
