@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import './SemesterPage.css';
-import Discipline from './Discipline';
+import Discipline from '../../components/Discipline/Discipline';
 
 function SemesterPage() {
   const { courseNumber, semesterNumber } = useParams();
@@ -20,7 +20,10 @@ function SemesterPage() {
         if (response.ok) {
           const data = await response.json();
           const disciplineNames = data.filter(item => item.type === 'dir').map(item => item.name);
-          setDisciplines(disciplineNames);
+          const disciplineLinks = disciplineNames.map(name =>
+            `https://raw.githubusercontent.com/muslimitsuhide/ics2_bmstu/main/${courseNumber}_course/${semesterNumber}_semester/${name}/file.pdf`
+          );
+          setDisciplines(disciplineNames.map((name, index) => ({ name, link: disciplineLinks[index] })));
           await fetchSemesterReadme();
         } else {
           setSemesterInfo('Информация о семестре пока что отсутствует.');
@@ -50,7 +53,7 @@ function SemesterPage() {
   }, [courseNumber, semesterNumber]);
 
   const handleDisciplineClick = (discipline) => {
-    navigate(`/course/${courseNumber}/semester/${semesterNumber}/${discipline}`);
+    navigate(`/ics2.github.io/course/${courseNumber}/semester/${semesterNumber}/${discipline}`);
   };
 
   return (
@@ -70,8 +73,8 @@ function SemesterPage() {
       <div className='semester-discipline-list'>
         <ul>
           {disciplines.map((discipline, index) => (
-            <li key={index} onClick={() => handleDisciplineClick(discipline)}>
-              <Discipline disciplineName={discipline} />
+            <li key={index} onClick={() => handleDisciplineClick(discipline.name)}>
+              <Discipline disciplineName={discipline.name} downloadLink={discipline.link} />
             </li>
           ))}
         </ul>

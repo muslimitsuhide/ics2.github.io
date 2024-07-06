@@ -1,4 +1,5 @@
 import React from 'react';
+import  './Discipline.css'
 
 function Discipline({ disciplineName }) {
   return (

@@ -27,19 +27,19 @@
 .course-semester-list li {
     cursor: pointer;
     margin: 0 10px;
-    padding: 10px 30px;
-    position: relative;
-    border-radius: 5px;
-    background-color: #ced4da;
-    border: 1px solid #ced4da;
-    color: #495057;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    padding: 12px 30px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #4ecdc4, #6ab1af);
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .course-semester-list li:hover {
-    background-color: #e9ecef;
-    border-radius: 5px;
+    background: linear-gradient(135deg, #6ab1af, #4ecdc4);
+    transform: translateY(-2px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -55,4 +55,8 @@
     list-style-type: none;
     padding: 0;
     margin: 0;
+}
+
+.course-semester-list li {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* добавлен стиль тени */
 }

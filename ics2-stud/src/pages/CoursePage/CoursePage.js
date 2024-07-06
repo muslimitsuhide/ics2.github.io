@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './CoursePage.css';
 import { useParams, useNavigate } from 'react-router-dom';
-import Semester from './Semester';
+import Semester from '../../components/Semester';
 
 function CoursePage() {
   const { courseNumber } = useParams();
@@ -35,7 +35,7 @@ function CoursePage() {
   const [semester1, semester2] = calculateSemesterNumbers(courseNumber);
 
   const handleSemesterClick = (semesterNumber) => {
-    navigate(`/course/${courseNumber}/semester/${semesterNumber}`);
+    navigate(`/ics2.github.io/course/${courseNumber}/semester/${semesterNumber}`);
   };
 
   return (
@@ -57,6 +57,10 @@ function CoursePage() {
           <li onClick={() => handleSemesterClick(semester1)}><Semester courseNumber={courseNumber} semesterNumber={semester1} /></li>
           <li onClick={() => handleSemesterClick(semester2)}><Semester courseNumber={courseNumber} semesterNumber={semester2} /></li>
         </ul>
+      </div>
+      <h3>Учебный план:</h3>
+      <div className='course-plan'>
+        
       </div>
     </div>
   );

@@ -1,0 +1,41 @@
+.semester-list {
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  padding: 10px;
+  width: 220px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.semester-list h3 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #495057;
+  text-align: center; 
+  margin-bottom: 10px;
+}
+
+.semester-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.semester-list li {
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #ced4da;
+  color: #495057;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+.semester-list li:hover {
+  background-color: #e9ecef;
+}
