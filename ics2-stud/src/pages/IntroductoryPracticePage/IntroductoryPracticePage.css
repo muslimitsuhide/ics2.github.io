@@ -1,0 +1,48 @@
+.introductory-practice-page {
+    padding: 0px 20px 0px 20px;
+    font-family: Arial, sans-serif;
+}
+  
+.practice-info {
+    max-width: 1000px;
+    margin: 20px auto;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+  
+.practice-info h3 {
+    margin-top: 0;
+}
+  
+.useful-files {
+    max-width: 1000px;
+    margin: 20px auto;
+    background: #f0f0f0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+  
+.useful-files h3 {
+    margin-top: 0;
+}
+  
+.useful-files ul {
+    list-style-type: none;
+    padding: 0;
+}
+  
+.useful-files li {
+    margin-bottom: 10px;
+}
+  
+.useful-files a {
+    color: #007bff;
+    text-decoration: none;
+}
+  
+.useful-files a:hover {
+    text-decoration: underline;
+}

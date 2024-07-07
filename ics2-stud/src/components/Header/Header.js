@@ -15,7 +15,9 @@ function Header() {
 
   return (
     <header className="header">
-      <h2>Student Information Platform</h2>
+      <div className="name">
+        <span>OND ICS Platform</span>
+      </div>
       <nav className="nav">
         <ul className="nav-buttons">
           <li onClick={() => handleNavClick('/')}>Главная</li>

@@ -1,0 +1,64 @@
+.enterprise-page {
+    padding: 0px 20px 0px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.enterprise-info {
+    max-width: 1000px;
+    margin: 20px auto;
+    margin-top: 20px;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.enterprise-info h3 {
+    margin-top: 0;
+}
+
+.enterprise-files {
+    cursor: pointer;
+    max-width: 1000px;
+    margin: 20px auto;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.enterprise-files h3 {
+    margin-top: 0;
+}
+
+.enterprise-files ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.enterprise-files li {
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border: 1px solid rgba(0, 123, 255, 0.3);
+    border-radius: 8px;
+    background: linear-gradient(135deg, rgba(78, 205, 196, 0.6), rgba(106, 177, 175, 0.6));
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s;
+}
+
+.enterprise-files li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, rgba(78, 205, 196, 0.8), rgba(106, 177, 175, 0.8));
+}
+
+.enterprise-files a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.enterprise-files a:hover {
+    color: #003d80;
+}

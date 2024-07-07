@@ -5,6 +5,8 @@ import CoursePage from './pages/CoursePage/CoursePage';
 import SemesterPage from './pages/SemesterPage/SemesterPage';
 import HomePage from './pages/HomePage/HomePage';
 import PracticePage from './pages/PracticePage/PracticePage';
+import EnterprisePage from './pages/EnterprisePage/EnterprisePage';
+import IntroductoryPracticePage from './pages/IntroductoryPracticePage/IntroductoryPracticePage';
 import './App.css';
 
 function App() {
@@ -16,8 +18,10 @@ function App() {
         </header>
         <main>
           <Routes>
-          <Route path="/" element={<HomePage />} />
+            <Route path="/" element={<HomePage />} />
             <Route path="/practice" element={<PracticePage />} />
+            <Route path="/practice/introductory" element={<IntroductoryPracticePage />} />
+            <Route path="/practice/:enterpriseName" element={<EnterprisePage />} />
             <Route path="/course/:courseNumber/semester/:semesterNumber" element={<SemesterPage />} />
             <Route path="/course/:courseNumber" element={<CoursePage />} />
           </Routes>
