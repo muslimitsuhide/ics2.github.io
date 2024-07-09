@@ -1,16 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 .course-page {
     padding: 0px 20px 0px 20px;
 }
+
 .course-info {
     background-color: #e0f7fa;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    padding: 10px;
+    padding: 25px;
     margin: 20px auto;
     max-width: 800px;
     color: #333;
-    padding: 15px;
+    max-height: 400px;
+    overflow-y: auto;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.2;
+    font-size: 16px;
 }
+
+@media (max-width: 768px) {
+    .course-info {
+      max-width: 90%;
+      max-height: 300px;
+    }
+}
+  
+@media (max-width: 480px) {
+    .course-info {
+      max-width: 95%;
+      max-height: 250px;
+    }
+}
+  
 
 .course-info h3 {
     color: #00796b;
