@@ -9,10 +9,12 @@
     margin: 20px auto;
     max-width: 800px;
     color: #333;
+    padding: 15px;
 }
 
 .course-info h3 {
     color: #00796b;
+    margin-top: 0px;
 }
 
 .course-semester-list {

@@ -7,6 +7,7 @@ import HomePage from './pages/HomePage/HomePage';
 import PracticePage from './pages/PracticePage/PracticePage';
 import EnterprisePage from './pages/EnterprisePage/EnterprisePage';
 import IntroductoryPracticePage from './pages/IntroductoryPracticePage/IntroductoryPracticePage';
+import DisciplinePage from './pages/DisciplinePage/DisciplinePage';
 import './App.css';
 
 function App() {
@@ -22,12 +23,16 @@ function App() {
             <Route path="/practice" element={<PracticePage />} />
             <Route path="/practice/introductory" element={<IntroductoryPracticePage />} />
             <Route path="/practice/:enterpriseName" element={<EnterprisePage />} />
-            <Route path="/course/:courseNumber/semester/:semesterNumber" element={<SemesterPage />} />
             <Route path="/course/:courseNumber" element={<CoursePage />} />
+            <Route path="/course/:courseNumber/semester/:semesterNumber" element={<SemesterPage />} />
+            <Route path="/course/:courseNumber/semester/:semesterNumber/:disciplineName" element={<DisciplinePage />} />
           </Routes>
         </main>
         <footer>
-          <p>@muslimitsuhide</p>
+            <p>
+                Все персонажи, термины, события - вымышлены. Любое совпадение - случайно <br />
+                Нашли баг? <a className="link" href="https://vk.com/ond1team">Пишите!</a>
+            </p>
         </footer>
       </Router>
     </div>

@@ -16,7 +16,7 @@
   
 .semester-discipline-list li {
     cursor: pointer;
-    margin: 0 10px 10px 0;
+    margin: 5px;
     padding: 12px 24px;
     border-radius: 8px;
     background: linear-gradient(135deg, #fd6f82, #ff8e6e);

@@ -59,16 +59,16 @@ function EnterprisePage() {
           <p>Загрузка информации о предприятии...</p>
         )}
       </div>
-      <div className='enterprise-files'>
+      <div className="enterprise-files">
         <h3>Полезные материалы:</h3>
         {files.length > 0 ? (
           <ul>
             {files.map(file => (
-              <li key={file.name}>
-                <a href={file.download_url} download>
+              <a key={file.name} href={file.download_url} download>
+                <li>
                   {file.name}
-                </a>
-              </li>
+                </li>
+              </a>
             ))}
           </ul>
         ) : (
