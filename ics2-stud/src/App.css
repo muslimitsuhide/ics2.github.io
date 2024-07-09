@@ -22,7 +22,22 @@
   width: 100%;
   background-color: #333;
   color: #fff;
-  padding: 10px 0;
+  padding: 5px 0;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .App footer {
+    padding: 5px 0;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .App footer {
+    padding: 5px 0;
+    font-size: 14px;
+  }
 }
 
 .link {
