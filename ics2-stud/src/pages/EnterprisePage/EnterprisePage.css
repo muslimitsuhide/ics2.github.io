@@ -42,7 +42,7 @@
     padding: 10px 15px;
     border: 1px solid rgba(0, 123, 255, 0.3);
     border-radius: 8px;
-    background: linear-gradient(135deg, rgba(78, 205, 196, 0.6), rgba(106, 177, 175, 0.6));
+    background: linear-gradient(135deg, #4ecdc499, #00796b);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s;
 }
 
