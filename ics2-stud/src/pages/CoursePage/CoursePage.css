@@ -21,18 +21,17 @@
 
 @media (max-width: 768px) {
     .course-info {
-      max-width: 90%;
-      max-height: 300px;
+        max-width: 90%;
+        max-height: 300px;
     }
 }
-  
+
 @media (max-width: 480px) {
     .course-info {
-      max-width: 95%;
-      max-height: 250px;
+        max-width: 95%;
+        max-height: 250px;
     }
 }
-  
 
 .course-info h3 {
     color: #00796b;
@@ -49,6 +48,7 @@
     list-style-type: none;
     padding: 0;
     display: flex;
+    justify-content: center;
 }
 
 .course-semester-list li {
@@ -86,4 +86,51 @@
 
 .course-semester-list li {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.course-plan {
+    margin-top: 20px;
+}
+
+.course-plan ul {
+    list-style-type: none;
+    padding: 0;
+    justify-content: center;
+}
+
+.course-plan li {
+    margin: 10px 0;
+}
+
+.course-plan button {
+    cursor: pointer;
+    padding: 12px 160px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #00796b, #004d40);
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.course-plan button:hover {
+    background: linear-gradient(135deg, #004d40, #00796b);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .course-plan button {
+        padding: 10px 100px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .course-plan button {
+        padding: 8px 80px;
+        font-size: 16px;
+    }
 }

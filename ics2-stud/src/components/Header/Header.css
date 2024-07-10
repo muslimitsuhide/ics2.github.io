@@ -87,6 +87,7 @@
 @media (max-width: 1024px) {
     .nav-buttons li,
     .courses li {
+        cursor: pointer;
         margin: 0 5px;
         padding: 10px 15px;
     }
@@ -106,6 +107,7 @@
 
     .nav-buttons,
     .courses {
+        cursor: pointer;
         list-style-type: none;
         padding: 0;
         display: flex;
@@ -121,6 +123,7 @@
 @media (max-width: 576px) {
     .nav-buttons li,
     .courses li {
+        cursor: pointer;
         margin: 0 3px;
         padding: 8px 12px;
         font-size: 12px;

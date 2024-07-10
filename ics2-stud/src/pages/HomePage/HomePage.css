@@ -1,0 +1,61 @@
+.home-page {
+    width: 100%;
+    height: 77vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f06292;
+    background-image: radial-gradient(circle at top left, #f06292, #ba68c8);
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+  
+.content {
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+  
+.heading {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+  
+.paragraph {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+  
+.with-love {
+    font-size: 1.2em;
+    font-style: italic;
+}
+  
+@media (max-width: 768px) {
+    .heading {
+      font-size: 2.5em;
+    }
+    .paragraph {
+      font-size: 1.2em;
+    }
+}
+  
+@media (max-width: 480px) {
+    .heading {
+      font-size: 2em;
+    }
+    .paragraph {
+      font-size: 1em;
+    }
+}
+  
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+  

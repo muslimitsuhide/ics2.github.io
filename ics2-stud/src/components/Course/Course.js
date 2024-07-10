@@ -1,5 +1,5 @@
 import React from 'react';
-import Semester from './Semester';
+import Semester from '../Semester/Semester';
 
 function Course({ courseNumber }) {
   return (
